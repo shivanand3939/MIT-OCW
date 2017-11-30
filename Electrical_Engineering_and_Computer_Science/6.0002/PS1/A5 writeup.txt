@@ -1,0 +1,15 @@
+1.  What were your results from compare_cow_transport_algorithms? Which algorithm runs faster? Why? 
+Sol) Greedy algo path is [[('Henrietta', '9')], [('Betsy', '9')], [('Herman', '7'), ('Maggie', '3')], [('Oreo', '6'), ('Moo Moo', '3')], [('Millie', '5'), ('Lola', '2'), ('Milkshake', '2')], [('Florence', '2')]]
+Time taken by greedy algo is  0.0
+
+Brute force path is [[('Oreo', '6'), ('Florence', '2'), ('Milkshake', '2')], [('Betsy', '9')], [('Herman', '7'), ('Maggie', '3')], [('Moo Moo', '3'), ('Lola', '2'), ('Millie', '5')], [('Henrietta', '9')]]
+Time taken by brute force algo is 4.71900010109 seconds
+
+Clearly time taken by Brute Force approach is more than greedy algorithm. This is understandable as Brute force seaches entire sample space, where as greedy algorithm searches only for a specific criteria in this case, choosing the largest weighted cow first and then proceeding ahead next largest weighted cow. 
+In short in greedy algorithm we try to select based on a given criteria where as in brute force we try all possible combinations.
+
+2. Does the greedy algorithm return the optimal solution? Why/why not? 
+Sol) Greedy algoritm does not return the optimal solution. It returns the best solution as per the greedy criteria i.e a local optimum solution. but it doesnt necessarily give the global optimum.
+
+3. Does the brute force algorithm return the optimal solution? Why/why not? 
+Sol) Yes it returns the optimal solution. It searches the entire sample space and finds out the global optimum solution but does not limit itself to local optimum solution
