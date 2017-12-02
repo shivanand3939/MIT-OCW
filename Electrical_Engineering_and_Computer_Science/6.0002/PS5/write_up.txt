@@ -1,0 +1,65 @@
+PART A
+
+ ● What difference does choosing a specific day to plot the data for versus calculating the yearly average have on our graphs (i.e., in terms of the R​2 values and the fit of the resulting curves)? Interpret the results. 
+Sol) Ploting on a specific date doesnt give us relable results as the data is spread out. where as computing for yearly average smoothens out the variations in the data. This can be interprested from teh R2 and SE/slope of the 2 graphs
+
+ ● Why do you think these graphs are so noisy? Which one is more noisy? 
+Ploting for a specific date is more noisy as the there is a higher chance of variablity, instead averaging out all the values over a year smoothens teh end points giving us a smooth graph
+
+ ● How do these graphs support or contradict the claim that global warming is leading to an increase in temperature? The slope and the standard error-to-slope ratio could be helpful in thinking about this.  
+ Sol)The slope is positive indicating that temperature is indeed increasing over the years. Also the SE/slop ratio is significant indicating this trend is not due to chance and there is indeed some pattern.
+
+ PART B
+
+● How does this graph compare to the graphs from part A ​(i.e., in terms of the R​2 values, t​ he fit of the resulting curves, and whether the graph supports/contradicts our claim about global warming)? Interpret the results. 
+Sol) R2 values are much better for this plot indicating that the model explains most of the variance in the data. This better confirms the hypothesis that temperature is incraesing over the years. Also we see that SE/slope ratio is much lesser indicating that there is some pattern and it is not due to chance.
+
+ ● Why do you think this is the case? 
+We have further smoothed out observations by averaging over a larger time period and including all the cities. Thus smoothes out not only variations due to time but also due to different geographic locations
+
+  ● How would we expect the results to differ if we used 3 different cities? What about 100 different cities? 
+  The R**2 values are lower if we used 3 different cities but it considerably improves when we use mroe cities. This behaviour is in tune with the logic that adding more cities furtehr smoothes the variations in climate and we get an average behaviour of the temperature
+
+  ● How would the results have changed if all 21 cities were in the same region of the United States (for ex., New England)? 
+  It would have been much like using few cities. for eg only 3 different cities. The advantage of including many different regions is we smooth out all the temperature variations across different regions and our data is not representative of only one region's behaviour. 
+
+
+ PART C
+
+● How does this graph compare to the graphs from part A and B (​i.e., in terms of the R​2​ values, the fit of the resulting curves, and whether the graph supports/contradicts our claim about global warming)? Interpret the results.
+This graph is much better than earlier 2 graphs A and B. The R**2 value is the highest among all plots till now. This shows that the temperature range is furtehr smoothed down. As the variablity is toned down we have a better model with better R**2
+
+● Why do you think this is the case? 
+The temperature range is further smoothed down. We can observe this easily by looking at the range of values for all the 3 plots, and the range is the least for this plot, meaning we have smoothed our data the most. 
+
+PART D
+
+● How do these models compare to each other? 
+If we go by pure R**2 values then the model with degree 20 has the best R**2. But It is most likely overfiting to the training data. 
+
+● Which one has the best R2? Why? 
+The one with degree 20 has the best R**2. This is because we can adjust several parameters of the polynomial regressor, thus allowing us to maximise the R**2
+
+● Which model best fits the data? Why? 
+If we go only by training data then the model with degree 20 best fits the data. However, we need to careful as we validate teh mdoel primiarily by looking at the performance in the test set.
+
+Plot the the resulting graphs for the degree =1,2,20 models and include them in ps5_writeup.pdf​. 
+ Answer the following questions with a short paragraph in ​ps5_writeup.pdf​. 
+ ● How did the different models perform? How did their RMSEs compare? 
+The model with degree 1 has the least RMSE of 0.08, next highest RMSE was teh model with with degree 2, and the highest RMSE was for teh model with degree 20.
+Clearly the model with degree 1 performed the best
+
+ ● Which model performed the best? Which model performed the worst? Are they the same as those in part D.2.I? Why?
+ The model with degree 1 performed the best as it has teh elast RMSE and the mdel with degree 20 performed the worst. It was the opposite in D.2.I. This has happened mainly due to overfiting where the model with degree 20 has overfitted to the training data and ignored the underlying true pattern
+
+ ● If we had generated the models using the A.4.II data (i.e. average annual temperature of New York City) instead of the 5-year moving average over 22 cities, how would the prediction results 2010-2015 have changed?  
+Sol) All 3 models performed poorly on the training set, (all 3 models have R**2 < 0.01) with degree 20 model having the best R**2 at 0.08. However for the test set degree 1 model has the least RMSE and degree 20 model with the highest RMSE. Overall this model has poor training R**2 value and very high RMSE values compared to the earlier moving average model. 
+
+PART E
+
+● Does the result match our claim (i.e., temperature variation is getting larger over these years)? 
+Sol) Yes, in a way the we can say the temperature variation is getting larger over the years as the standard deviation is decreasing over the years and the mean temperature is increasing over the years.
+
+● Can you think of ways to improve our analysis? 
+Sol) 1) Perhaps we can build other models like SVM Regressor, Decision Tree Regressor or Ensemble regressors, or look at more validation parameters to guage the utility of a model. Also can add other variables to see which variables are causing the temperature increase. 
+2) We can also look at adding more cities to our analysis, or analysing region by region to see if any one region is greatly affected by temperature increase. Definetely more data can help us further drill down the evolution of temperature over the years.
