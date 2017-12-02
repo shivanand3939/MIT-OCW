@@ -1,0 +1,11 @@
+1. What happens to the total population before introducing the antibiotic? 
+Sol)If the birth_rate is greater than death_rate, the total_population before introducting the antibiotic increases and it increases for some time and quickly decreases if the birth_rate is less than death_rate
+
+2. What happens to the resistant bacteria population before introducing the antibiotic? 
+Sol) Resistant bacteria depends on pop_density before introducing the antibiotic. If the pop_density is low, then number of resistant bacteria are higher. Thus we see that in plot2 where death_rate > birth_rate, the pop_density is lower as compared to plot1, so resistant bacteria population is higher in plot 2
+
+3. What happens to the total population after introducing the antibiotic? 
+Sol) After introducing the antibiotic the resistant bacteria survives and the rest are mostly killed as they have lesser chance of survival. Among the resistant bacteria they follow the general trend where they die as per the normal death_rate. As the non-resistant bacteria hardly survive, thus the total bacteria size is more or less equal to resistant bacteria population.
+
+4. What happens to the resistant bacteria population after introducing the antibiotic? 
+Sol) The resistant bacteria population survives as the non-resistant bacteria have very low chances of survival.
